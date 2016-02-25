@@ -1,0 +1,14 @@
+REFUGEE DEATH EN ROUTE TO EUROPE 2000-2016
+Data made available on HUMANITARIAN DATA EXCHANGE by THE MIGRANTS' FILES
+Analysis by Rufus Raghunath
+Feb 2016
+
+DESCRIPTIVE_STATISTICS
+
+route_mode: Western Mediterranean Route 
+month_mode:  1
+year_mode:  2008
+cod_mode:  drowning or exhaustion
+dom_mode:  1
+dom_median:  2
+dom_mean:  10.4
