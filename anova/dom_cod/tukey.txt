@@ -1,0 +1,29 @@
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = refugee_data$dead_or_missing ~ refugee_data$cause_of_death)
+
+$`refugee_data$cause_of_death`
+                                                            diff         lwr        upr     p adj
+drowning or exhaustion-authorities related death    11.561524902   2.0774943 21.0455555 0.0060455
+malicious intent-authorities related death           0.707780048 -13.6617989 15.0773590 0.9999992
+other-authorities related death                     -1.602813853 -31.0507810 27.8451533 0.9999986
+suicide-authorities related death                   -1.608452951 -13.0669257  9.8500198 0.9996135
+unknown-authorities related death                    7.313660802  -2.5811728 17.2084944 0.3062778
+violent accidental death-authorities related death   0.279603730 -10.9173342 11.4765416 1.0000000
+malicious intent-drowning or exhaustion            -10.853744855 -22.2608747  0.5533850 0.0744364
+other-drowning or exhaustion                       -13.164338755 -41.2858711 14.9571936 0.8121114
+suicide-drowning or exhaustion                     -13.169977853 -20.5817530 -5.7582028 0.0000035
+unknown-drowning or exhaustion                      -4.247864101  -8.8895819  0.3938537 0.0985348
+violent accidental death-drowning or exhaustion    -11.281921173 -18.2825804 -4.2812619 0.0000427
+other-malicious intent                              -2.310593900 -32.4329867 27.8117989 0.9999889
+suicide-malicious intent                            -2.316232998 -15.4109790 10.7785131 0.9985487
+unknown-malicious intent                             6.605880754  -5.1450132 18.3567747 0.6439261
+violent accidental death-malicious intent           -0.428176318 -13.2946908 12.4383381 0.9999999
+suicide-other                                       -0.005639098 -28.8530020 28.8417238 1.0000000
+unknown-other                                        8.916474654 -19.3462478 37.1791971 0.9676595
+violent accidental death-other                       1.882417582 -26.8620630 30.6268982 0.9999957
+unknown-suicide                                      8.922113752   0.9914577 16.8527698 0.0159210
+violent accidental death-suicide                     1.888056680  -7.6176780 11.3937914 0.9972180
+violent accidental death-unknown                    -7.034057072 -14.5819128  0.5137987 0.0867308
+
