@@ -1,12 +1,12 @@
-#RESULTS and CONCLUSIONS
+#Results and Conclusion
 ###Using R to understand the leading causes of death among refugees coming to Europe
 ######Rufus Raghunath - Makers Academy week 06 (independent project)
 
 
-##CONCLUSION
+##Conclusion
 Overall fatalities are increasing and the highest-risk group are refugees traveling into Europe by sea in January via the Western Mediterranean Route. Drowning and exhaustion account for the vast majority of refugee disaster incidents.
 
-##SUMMARY OF RESULTS
+##Summary of Results
 Drowning and exhaustion related incidents are by far the most deadly. These incidents have the highest mean death/missing count, as well as the highest count for any one incident (800), thus far surpassing intentional causes of death such as malicious intent (e.g. murder, manslaughter) and authority-related death (e.g. police brutality, torture). Devoting effort to preventing shipwrecks or providing better coastguard/disaster response aid to the affected nautical routes could massively reduce refugee morbidity.
 
 The last 15 years have varied greatly in how fatal a given disaster incident is (i.e. how many person die or go missing as a result). In general, incidents have become a good deal more fatal, meaning that any one incident is likely to result in more deaths than before. This may be explained by a greater number of total refugees, thus increasing the number of potential victims of any one incident.
@@ -24,9 +24,9 @@ In order to compare relative rather than absolute deadliness of refugee routes, 
 
 
 
-##TECHNICAL RESULTS
+##Technical Results
 
-###ABBREVIATIONS USED
+###Abbreviations used
 Cause of death:
 
 - DOE - Drowning or exhaustion
@@ -95,7 +95,7 @@ Route
 - coming soon...
 
 
-###CHI-SQUARED
+###Chi-squared
 The following distributions were found to be non-independent (p<0.05):
 
 Cause of death * Month
