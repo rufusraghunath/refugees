@@ -1,0 +1,66 @@
+
+<div class="row">
+  <div class="col-md-2"></div>
+
+  <div class="col-md-8 text-justify">
+    <h1>Explore</h1>
+    <hr style="width:100%; border: 1px solid #ffebcc;margin-bottom: 4%;" />
+
+    <h3>The data</h3>
+    <p>
+      <a href='http://www.themigrantsfiles.com/'>The Migrants' Files</a> is a collective of journalists that have chronicled the misfortunes of refugees seeking a new life in Europe. They have kindly made their data publicly available at <a href="https://data.hdx.rwlabs.org/dataset/refugee-and-migrant-deaths-while-trying-to-reach-europe/resource/bea9c0fa-51b2-4961-859f-cf22b2c09999">The Humanitarian Data Exchange</a>, a collection of free humanitarian databases.
+    </p>
+    <p>
+      The database consists of a log of media reports of refugees dying or going missing on the way to Europe, from 2000 to the present (still being updated). Each incident has several pieces of context-giving information attached to it. This project has focused on the following properties of each incident: year, month, route taken (into Europe), cause of death, and number of dead or missing persons (summation of dead and missing persons).
+    </p>
+
+    <h3>The analysis</h3>
+    <p>
+      For the numeric variable (number of dead/missing persons), one-way ANOVAs were performed to test for interactions with ordinal variables. Significance was found in the interaction with year, cause of death, and route taken, but not month. TukeyHSD post-hoc tests were performed where F values were significant.
+    </p>
+    <p>
+      For the ordinal variables, chi-squared tests were performed to test for independence. Significance was found in every arrangement of cause of death, route, month, and year. Post-hoc tests were performed in R using the <a href="http://finzi.psych.upenn.edu/library/fifer/html/chisq.post.hoc.html">fifer package</a> for R.
+    </p>
+    <p>
+      Please see this project's <a href='https://github.com/rufusraghunath/refugees'>GitHub repository</a> for further details.
+    </p>
+    <h3>Conclusions</h3>
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+
+    <div class='slider-container'>
+      <ul>
+        <li>
+          <img src='/graphs/barplot_cod_dom.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/barplot_dom_month.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/barplot_dom_year.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/heatmap_cod_month.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/heatmap_cod_year.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/heatmap_route_month.jpg' />
+        </li>
+        <li>
+          <img src='/graphs/heatmap_route_year.jpg' />
+        </li>
+      </ul>
+      <button id="prev">prev</button>
+      <button id="next">next</button>
+    </div>
+
+
+
+
+
+  </div><!-- end column middle -->
+  <div class="col-md-2"></div>
+</div><!-- end row -->

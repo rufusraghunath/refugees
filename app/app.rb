@@ -12,7 +12,7 @@ class RefugeeData < Sinatra::Base
   end
 
   get '/explore' do
-
+    erb :explore
   end
 
 

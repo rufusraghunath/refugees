@@ -16,7 +16,7 @@ Variables were sorted into numeric/quantitative (number of persons ```dead_or_mi
 
 For the numeric variable, one-way ANOVAs were performed to test for interactions with ordinal variables. Significance was found in the interaction with ```year```, ```cause_of_death```, and ```route``` (still needs to be adjusted for total number of refugees traveling per route), but not ```month```.
 
-For the ordinal variables, chi-square tests were performed to test for independence. Significance was found in every arrangement of ```cause_of_death```, ```route```, ```month```, and ```year```.
+For the ordinal variables, chi-squared tests were performed to test for independence. Significance was found in every arrangement of ```cause_of_death```, ```route```, ```month```, and ```year```.
 
 For the stats details, see ```/anova``` and ```/chisq```.
 
@@ -27,9 +27,7 @@ Coming soon...
 
 ##TO DO:
 - adjust ```dead_or_missing```x```route``` interaction for no. of person traveling per route
-- chi-squared tests
-- graphical presentation of findings
-
+- consider better functionality/design for image slider
 
 ##TECHNOLOGIES USED:
 - R
@@ -44,6 +42,8 @@ Coming soon...
 Thanks to <a href="https://data.hdx.rwlabs.org/">The Humanitarian Data Exchange</a> and <a href="http://www.themigrantsfiles.com/">The Migrants' Files</a> for making this data available.
 
 The image of the refugee boat on the index page is from http://www.iamsyria.org/teaching-about-the-refugee-crisis-and-making-a-difference.html.
+
+Idea for jQuery image slider from http://imageslidermaker.com/blog/how-to-make-a-responsive-image-slider-using-jquery-and-css.
 
 
 ##HOW TO USE:
