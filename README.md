@@ -33,7 +33,10 @@ Coming soon...
 
 ##TECHNOLOGIES USED:
 - R
+- Ruby
+- Sinatra
 - HTML/CSS
+- jQuery
 - jQuery
 
 
