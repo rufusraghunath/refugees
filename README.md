@@ -1,6 +1,7 @@
 #Refugee Disasters 2000-2016
 ###Using R to understand the leading causes of death among refugees coming to Europe
 ######Rufus Raghunath - Makers Academy week 06 (independent project)
+Deployed to <a href="https://refugee-disasters.herokuapp.com/">Heroku</a> 26/02/2016
 
 Recently, the public has become increasingly aware of the influx of refugees to Europe from various disaster-struck areas, particularly Syria. Many of those fleeing to the perceived safety of Europe have been met with yet more catastrophe. It is now more crucial than ever to understand what dangers refugees are encountering along the way, so as to be able to offer efficient aid.
 
@@ -23,6 +24,8 @@ For the stats details, see ```/anova``` and ```/chisq```.
 
 ##CONCLUSIONS:
 Overall fatalities are increasing and the highest-risk group are refugees traveling into Europe by sea in January via the Western Mediterranean Route. Drowning and exhaustion account for the vast majority of refugee disaster incidents.
+
+See ```conclusions.md``` for more.
 
 
 ##TO DO:
@@ -49,4 +52,15 @@ Idea for jQuery image slider from http://imageslidermaker.com/blog/how-to-make-a
 
 
 ##HOW TO USE:
-Coming soon...
+Get started by visiting https://refugee-disasters.herokuapp.com/. You will be greeted with the home/summary screen:
+
+![index](app/public/images/screenshots/index.png)
+
+Click the 'Explore' button to view the results of the analysis:
+
+![explore](app/public/images/screenshots/explore.png)
+
+There are 7 graphical representations (plots) of the results in total and they are presented in the common 'image slider' format. Click on the left or right side of the currently displayed graph to move to the next/previous image:
+
+![graphs](app/public/images/screenshots/graphs.png)
+
