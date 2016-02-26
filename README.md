@@ -43,6 +43,8 @@ Coming soon...
 ##ACKNOWLEDGEMENTS:
 Thanks to <a href="https://data.hdx.rwlabs.org/">The Humanitarian Data Exchange</a> and <a href="http://www.themigrantsfiles.com/">The Migrants' Files</a> for making this data available.
 
+The image of the refugee boat on the index page is from http://www.iamsyria.org/teaching-about-the-refugee-crisis-and-making-a-difference.html.
+
 
 ##HOW TO USE:
 Coming soon...
