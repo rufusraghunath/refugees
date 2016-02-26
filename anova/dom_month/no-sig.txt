@@ -1,0 +1,4 @@
+                     Df  Sum Sq Mean Sq F value Pr(>F)
+refugee_data$month    1     725   725.1   0.565  0.452
+Residuals          3079 3949763  1282.8               
+2 observations deleted due to missingness

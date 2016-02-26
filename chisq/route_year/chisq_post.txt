@@ -1,0 +1,46 @@
+                                                               comparison  raw.p  adj.p
+1                                           vs. Apulia and Calabria Route 0.0000 0.0000
+2                                              vs. Central European Route 0.0021 0.0027
+3                                         vs. Central Mediterranean Route 0.0000 0.0000
+4                              vs. Circular Route from Greece and Albania 0.4220 0.4587
+5                                               vs. Eastern Borders Route 0.6337 0.6602
+6                                         vs. Eastern Mediterranean Route 0.0000 0.0000
+7                                               vs. Western African Route 0.0000 0.0000
+8                                                vs. Western Balkan Route 0.0000 0.0000
+9                                         vs. Western Mediterranean Route 0.0007 0.0011
+10                   Apulia and Calabria Route vs. Central European Route    NaN    NaN
+11              Apulia and Calabria Route vs. Central Mediterranean Route 0.0000 0.0000
+12   Apulia and Calabria Route vs. Circular Route from Greece and Albania    NaN    NaN
+13                    Apulia and Calabria Route vs. Eastern Borders Route    NaN    NaN
+14              Apulia and Calabria Route vs. Eastern Mediterranean Route 0.0000 0.0000
+15                    Apulia and Calabria Route vs. Western African Route    NaN    NaN
+16                     Apulia and Calabria Route vs. Western Balkan Route    NaN    NaN
+17              Apulia and Calabria Route vs. Western Mediterranean Route    NaN    NaN
+18                 Central European Route vs. Central Mediterranean Route 0.8208 0.8208
+19      Central European Route vs. Circular Route from Greece and Albania    NaN    NaN
+20                       Central European Route vs. Eastern Borders Route    NaN    NaN
+21                 Central European Route vs. Eastern Mediterranean Route 0.0012 0.0015
+22                       Central European Route vs. Western African Route    NaN    NaN
+23                        Central European Route vs. Western Balkan Route    NaN    NaN
+24                 Central European Route vs. Western Mediterranean Route    NaN    NaN
+25 Central Mediterranean Route vs. Circular Route from Greece and Albania 0.0000 0.0000
+26                  Central Mediterranean Route vs. Eastern Borders Route 0.0001 0.0002
+27            Central Mediterranean Route vs. Eastern Mediterranean Route 0.0000 0.0000
+28                  Central Mediterranean Route vs. Western African Route 0.0000 0.0000
+29                   Central Mediterranean Route vs. Western Balkan Route 0.0000 0.0000
+30            Central Mediterranean Route vs. Western Mediterranean Route 0.0000 0.0000
+31       Circular Route from Greece and Albania vs. Eastern Borders Route    NaN    NaN
+32 Circular Route from Greece and Albania vs. Eastern Mediterranean Route 0.0010 0.0014
+33       Circular Route from Greece and Albania vs. Western African Route    NaN    NaN
+34        Circular Route from Greece and Albania vs. Western Balkan Route    NaN    NaN
+35 Circular Route from Greece and Albania vs. Western Mediterranean Route    NaN    NaN
+36                  Eastern Borders Route vs. Eastern Mediterranean Route 0.0499 0.0594
+37                        Eastern Borders Route vs. Western African Route    NaN    NaN
+38                         Eastern Borders Route vs. Western Balkan Route    NaN    NaN
+39                  Eastern Borders Route vs. Western Mediterranean Route    NaN    NaN
+40                  Eastern Mediterranean Route vs. Western African Route 0.0000 0.0000
+41                   Eastern Mediterranean Route vs. Western Balkan Route 0.3602 0.4093
+42            Eastern Mediterranean Route vs. Western Mediterranean Route 0.0000 0.0000
+43                         Western African Route vs. Western Balkan Route    NaN    NaN
+44                  Western African Route vs. Western Mediterranean Route    NaN    NaN
+45                   Western Balkan Route vs. Western Mediterranean Route 0.0000 0.0000

@@ -1,0 +1,22 @@
+                                               comparison  raw.p  adj.p
+1    authorities related death vs. drowning or exhaustion 0.0000 0.0000
+2          authorities related death vs. malicious intent 0.2220 0.2220
+3                     authorities related death vs. other 0.0000 0.0000
+4                   authorities related death vs. suicide 0.0016 0.0020
+5                   authorities related death vs. unknown 0.0000 0.0000
+6  authorities related death vs. violent accidental death 0.0006 0.0009
+7             drowning or exhaustion vs. malicious intent 0.0104 0.0115
+8                        drowning or exhaustion vs. other 0.0000 0.0000
+9                      drowning or exhaustion vs. suicide 0.0008 0.0010
+10                     drowning or exhaustion vs. unknown 0.0000 0.0000
+11    drowning or exhaustion vs. violent accidental death 0.0000 0.0000
+12                             malicious intent vs. other 0.0078 0.0092
+13                           malicious intent vs. suicide 0.0001 0.0001
+14                           malicious intent vs. unknown 0.0000 0.0000
+15          malicious intent vs. violent accidental death 0.2077 0.2186
+16                                      other vs. suicide    NaN    NaN
+17                                      other vs. unknown 0.0000 0.0000
+18                     other vs. violent accidental death 0.0000 0.0000
+19                                    suicide vs. unknown 0.0000 0.0000
+20                   suicide vs. violent accidental death 0.0000 0.0000
+21                   unknown vs. violent accidental death 0.0000 0.0000

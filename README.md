@@ -1,8 +1,6 @@
 #Refugee Disasters 2000-2016
 ###Using R to understand the leading causes of death among refugees coming to Europe
-
-######Makers Academy week 06 - independent project
-######Rufus Raghunath
+######Rufus Raghunath - Makers Academy week 06 (independent project)
 
 Recently, the public has become increasingly aware of the influx of refugees to Europe from various disaster-struck areas, particularly Syria. Many of those fleeing to the perceived safety of Europe have been met with yet more catastrophe. It is now more crucial than ever to understand what dangers refugees are encountering along the way, so as to be able to offer efficient aid.
 
@@ -18,7 +16,13 @@ Variables were sorted into numeric/quantitative (number of persons ```dead_or_mi
 
 For the numeric variable, one-way ANOVAs were performed to test for interactions with ordinal variables. Significance was found in the interaction with ```year```, ```cause_of_death```, and ```route``` (still needs to be adjusted for total number of refugees traveling per route), but not ```month```.
 
-For the stats details, see ```/anova``` and ```/chi2```.
+For the ordinal variables, chi-square tests were performed to test for independence. Significance was found in every arrangement of ```cause_of_death```, ```route```, ```month```, and ```year```.
+
+For the stats details, see ```/anova``` and ```/chisq```.
+
+
+##CONCLUSIONS:
+Coming soon...
 
 
 ##TO DO:
