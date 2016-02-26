@@ -13,7 +13,7 @@ The last 15 years have varied greatly in how fatal a given disaster incident is 
 
 Time of year (month) does not appear to affect the mean dead/missing count per incident. This may be explained by the fact that the greatest number of fatalities is accounted for by drowning/exhaustion, which is likely to result in the same fatality rate at any time of year.
 
-Across various comparisons, January appears to be most deadly month (highest frequency incidents reported). This may be due to the presence of more extreme weather conditions, particularly given the finding that drowning and exhaustion incidents account for the majority of refugee deaths (i.e. ships are more likely to founder in bad weather). It follows that aid efforts should be particularly intensified in winter.
+Across various comparisons, January appears to be most deadly month (highest frequency of incidents reported). This may be due to the presence of more extreme weather conditions, particularly given the finding that drowning and exhaustion incidents account for the majority of refugee deaths (i.e. ships are more likely to founder in bad weather). It follows that aid efforts should be particularly intensified in winter.
 
 2008 deadliest year?
 
@@ -29,33 +29,35 @@ In order to compare relative rather than absolute deadliness of refugee routes, 
 ###ABBREVIATIONS USED
 Cause of death:
 
-DOE - Drowning or exhaustion
-AUT - Authority-related death
-SUI - Suicide
-VIO - Violent accidental death
-MAL - Malicious intent
-UNK - Unknown
-OTH - Other
+- DOE - Drowning or exhaustion
+- AUT - Authority-related death
+- SUI - Suicide
+- VIO - Violent accidental death
+- MAL - Malicious intent
+- UNK - Unknown
+- OTH - Other
 
 Route taken:
 
-ACR - Apulia and Calabria Route
-WMR - Western Mediterranean Route
-CMR - Central Mediterranean Route
-EMR - Eastern Mediterranean Route
-WAR - Western African Route
-UNK - Unknown
+- ACR - Apulia and Calabria Route
+- WMR - Western Mediterranean Route
+- CMR - Central Mediterranean Route
+- EMR - Eastern Mediterranean Route
+- WAR - Western African Route
+- UNK - Unknown
 
 
 ###ANOVA
 Significant differences (p<0.05) in mean number of persons dead/missing per disaster incident were found between:
 
 Cause of death
+
 - DOE and AUT
 - DOE and SUI
 - UNK and SUI
 
 Year
+
 - 2011 and 2000
 - 2014 and 2000
 - 2015 and 2000
@@ -89,6 +91,7 @@ Year
 - 2016 and 2014
 
 Route
+
 - coming soon...
 
 
@@ -96,11 +99,13 @@ Route
 The following distributions were found to be non-independent (p<0.05):
 
 Cause of death * Month
+
 - DOA and UNK
 - MAL and UNK
 - SUI and UNK
 
 Cause of death * Year
+
 - AUT and DOE
 - AUT and OTH
 - AUT and SUI
@@ -121,9 +126,11 @@ Cause of death * Year
 - UNK and VIO
 
 Cause of death * Route taken
+
 - coming soon...
 
 Cause of death * Year
+
 - AUT and DOE
 - AUT and OTH
 - AUT and SUI
@@ -144,6 +151,7 @@ Cause of death * Year
 - UNK and VIO
 
 Route taken * Month
+
 - UNK and ACR
 - UNK and EMR
 - UNK and WAR
@@ -152,9 +160,3 @@ Route taken * Month
 - CMR and WMR
 - EMR and WAR
 - EMR and WMR
-
-
-
-
-
-

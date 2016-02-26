@@ -4,6 +4,13 @@ html, body{height:100%; margin:0;padding:0;}
   font-family: 'Oxygen', 'Helvetica Neue';
 }
 
+p {
+  font-size: 12pt;
+  line-height: 1.7;
+}
+
+/*resize <p> size*/
+
 .container-fluid{
   height:100%;
   display:table;
@@ -28,11 +35,18 @@ html, body{height:100%; margin:0;padding:0;}
   margin:0 auto;
 }
 
+#index-text {
+  border-left: 3px solid grey;
+}
+
 #index-img {
   width:100%;
-  height: 280px;
-  padding-right: 8%;
-  border-right: 3px solid black;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#index-text p {
+  line-height: 1.2;
 }
 
 .button {
@@ -60,21 +74,25 @@ html, body{height:100%; margin:0;padding:0;}
 }
 
 h3 {
-  margin-top: 4%;
+  margin-top: 3%;
 }
 
-.slider-container {
+.slider-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.slider {
    width: 100%;
    overflow: hidden;
-   height: 500px;
-   background-color:grey;
+   height: 630px;
    margin-top: 5%;
-   margin-bottom: 5%;
+   margin-bottom: 3%;
    position: relative;
 }
 
-.slider-container ul {
-  width: 800%;
+.slider ul {
+  width: 700%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -83,24 +101,25 @@ h3 {
   top: 0;
 }
 
-.slider-container ul li {
+.slider ul li {
   padding: 0;
   margin: 0;
   height: 100%;
-  width: 12.5%;
+  width: (100/7)%;
   overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
 }
 
-.slider-container ul li img {
+.slider ul li img {
   width: 100%;
-  min-height: 100%;
   border: none;
 }
 
 #prev, #next {
+  font-size: 30pt;
+  font-family: Helvetica, sans-serif;
   right: 0;
   position: absolute;
   display: block;
@@ -109,8 +128,8 @@ h3 {
   outline: none;
   top: 0;
   bottom: 0;
-  width: 20%;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.1);
   color: #fff;
   margin: 0;
   padding: 0;

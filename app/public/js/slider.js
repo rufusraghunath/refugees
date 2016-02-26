@@ -1,10 +1,10 @@
-// need document.ready ?
-// can remove console.log statements later
-
+// adapted from http://imageslidermaker.com/blog/how-to-make-a-responsive-image-slider-using-jquery-and-css
 
 $(function() {
 
-  var ul = $(".slider-container ul");
+  $('#prev').hide();
+
+  var ul = $(".slider ul");
   var slide_count = ul.children().length;
   var slide_width_pc = 100.0 / slide_count;
   var slide_index = 0;
@@ -15,23 +15,30 @@ $(function() {
     $(this).css({width:(100 / slide_count) + "%"});
   });
 
-  // Listen for click of prev button
   $("#prev").click(function() {
-    console.log("prev button clicked");
     slide(slide_index - 1);
   });
 
-  // Listen for click of next button
   $("#next").click(function() {
-    console.log("next button clicked");
     slide(slide_index + 1);
   });
 
   function slide(new_slide_index) {
-    if(new_slide_index < 0 || new_slide_index >= slide_count) return;
+    if(new_slide_index < 0){
+      $('#prev').hide();
+      return;
+    }
+    if(new_slide_index >= slide_count){
+      $('#next').hide();
+      return;
+    }
+    $('#prev').show();
+    $('#next').show();
     var margin_left_pc = (new_slide_index * (-100)) + "%";
     ul.animate({"margin-left": margin_left_pc}, 400, function() {
       slide_index = new_slide_index;
     });
+    if(new_slide_index === 0){$('#prev').hide();}
+    if(new_slide_index === slide_count){$('#prev').hide();}
   }
 });

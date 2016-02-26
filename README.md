@@ -22,12 +22,14 @@ For the stats details, see ```/anova``` and ```/chisq```.
 
 
 ##CONCLUSIONS:
-Coming soon...
+Overall fatalities are increasing and the highest-risk group are refugees traveling into Europe by sea in January via the Western Mediterranean Route. Drowning and exhaustion account for the vast majority of refugee disaster incidents.
 
 
 ##TO DO:
 - adjust ```dead_or_missing```x```route``` interaction for no. of person traveling per route
 - consider better functionality/design for image slider
+- make graph height respond better to page height
+- make mobile-friendly version of site
 
 ##TECHNOLOGIES USED:
 - R
