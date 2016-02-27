@@ -85,7 +85,6 @@ h3 {
 .slider {
    width: 100%;
    overflow: hidden;
-   height: 630px;
    margin-top: 5%;
    margin-bottom: 3%;
    position: relative;
@@ -96,18 +95,15 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: absolute;
-  height: 100%;
   top: 0;
 }
 
 .slider ul li {
+  float: left;
   padding: 0;
   margin: 0;
-  height: 100%;
   width: (100/7)%;
   overflow: hidden;
-  position: absolute;
   top: 0;
   bottom: 0;
 }
