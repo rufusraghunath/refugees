@@ -1,5 +1,4 @@
-#Results and Conclusion
-###Using R to understand the leading causes of death among refugees coming to Europe
+#Refugee Disasters 2000-2016
 #####Rufus Raghunath - Makers Academy week 06 (independent project)
 
 

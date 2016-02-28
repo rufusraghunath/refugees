@@ -19,7 +19,7 @@ For the numeric variable, one-way ANOVAs were performed to test for interactions
 
 For the ordinal variables, chi-squared tests were performed to test for independence. Significance was found in every arrangement of ```cause_of_death```, ```route```, ```month```, and ```year```.
 
-For each route, the total number of illegal entrants in 2015 was added to the number of persons who died or went missing on that route in 2015 (d), giving the total number of persons who attempted to make the journey (j). The mortality rate (in percent) for that route was calculated using m = (d/j)*100.
+For each route, the total number of illegal entrants in 2015 was added to the number of persons who died or went missing on that route in 2015 (d), giving the total number of persons who attempted to make the journey (j). The percentage mortality rate (m) for that route was calculated using m = (d/j)*100.
 
 For the stats details, see ```/anova``` and ```/chisq```.
 
