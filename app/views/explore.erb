@@ -11,7 +11,7 @@
       <a href='http://www.themigrantsfiles.com/'>The Migrants' Files</a> is a collective of journalists that have chronicled the misfortunes of refugees seeking a new life in Europe. They have kindly made their data publicly available at <a href="https://data.hdx.rwlabs.org/dataset/refugee-and-migrant-deaths-while-trying-to-reach-europe/resource/bea9c0fa-51b2-4961-859f-cf22b2c09999">The Humanitarian Data Exchange</a>, a collection of free humanitarian databases.
     </p>
     <p>
-      The database consists of a log of media reports of refugees dying or going missing on the way to Europe, from 2000 to the present (still being updated). Each incident has several pieces of context-giving information attached to it. This project has focused on the following properties of each incident: year, month, route taken (into Europe), cause of death, and number of dead or missing persons (summation of dead and missing persons).
+      The database consists of a log of media reports of refugees dying or going missing on the way to Europe, from 2000 to the present (still being updated). Each incident has several pieces of context-giving information attached to it. This project has focused on the following properties of each incident: year, month, route taken into Europe (<a href='http://frontex.europa.eu/trends-and-routes/migratory-routes-map/'>as classified by Frontex</a>), cause of death, and number of dead or missing persons (summation of dead and missing persons).
     </p>
 
     <h3>The analysis</h3>
@@ -23,6 +23,18 @@
     </p>
     <p>
       For the ordinal variables, chi-squared tests were performed to test for independence. Significance was found in every arrangement of cause of death, route, month, and year. Post-hoc tests were performed in R using the <a href="http://finzi.psych.upenn.edu/library/fifer/html/chisq.post.hoc.html">fifer package</a> for R.
+    </p>
+    <p>
+      In order to compare relative rather than absolute deadliness of refugee routes, the analysis was adjusted for the number of refugees traveling on each route. The closest approximation of refugee entry into Europe is <a href='http://frontex.europa.eu/trends-and-routes/migratory-routes-map/'>the number of illegal entries into Europe via the separate routes compiled by Frontex</a>. The following procedure was used to obtain an approximate up-to-date route mortality rate for the year:
+    </p>
+    <p>
+      For each route, the total number of illegal entrants in 2015 was added to the number of persons who died or went missing on that route in 2015 (d), giving the total number of persons who attempted to make the journey (j). The percentage mortality rate (m) for that route was calculated using m = (d/j)*100.
+    </p>
+    <p>
+      <a href='http://frontex.europa.eu/trends-and-routes/apulia-and-calabria-route/'>Note</a> on the Apulia and Calabria route from Frontex:
+    </p>
+    <p>
+      <em>As of October 2014, the data for the route to Apulia and Calabria have been included in the Central Mediterranean route. Indeed, many migrants are disembarked in Apulia and Calabria even though they have been detected in the Central Mediterranean area. However, the current reporting mechanism does not break down by areas of detections, but by areas of disembarkation, thus a distinction of detections between these two routes is not available.</em>
     </p>
     <p>
       Please see this project's <a href='https://github.com/rufusraghunath/refugees'>GitHub repository</a> for further details.
@@ -40,6 +52,9 @@
         <ul>
           <li>
             <img src='/graphs/barplot_cod_dom.jpg' />
+          </li>
+          <li>
+            <img src='/graphs/barplot_route_mortality_rate.jpg' />
           </li>
           <li>
             <img src='/graphs/barplot_dom_month.jpg' />
@@ -90,7 +105,7 @@
       Across various comparisons, January appears to be most deadly month (highest frequency of incidents reported). This may be due to the presence of more extreme weather conditions, particularly given the finding that drowning and exhaustion incidents account for the majority of refugee deaths (i.e. ships are more likely to founder in bad weather). It follows that aid efforts should be particularly intensified in winter.
     </p>
     <p>
-      N.B.: In order to compare relative rather than absolute deadliness of refugee routes, these analyses still need to be adjusted for the number of refugees traveling on each route.
+      Overall, the <a href='http://frontex.europa.eu/trends-and-routes/western-african-route/'>Western African route</a> is the most dangerous, with a 4.69% mortality rate in 2015. Second is the <a href='http://frontex.europa.eu/trends-and-routes/central-mediterranean-route/'>Central Mediterranean route</a> (1.97%) and, while the <a href='http://frontex.europa.eu/trends-and-routes/western-mediterranean-route/'>Western Mediterranean route</a> (1.24%) is third. As all of these routes lead over water, these results underscore corroborate the previous data on the extreme prevalence of drowning/exhaustion-related morbidity. <b>It is advisable to avoid these routes of travel if at all possible</b>. However, these mortality rates are only an approximation based on the assumption that Frontex's <a href='http://frontex.europa.eu/trends-and-routes/migratory-routes-map/'>data</a> on illegal entry into Europe accurately represents refugee travel on the various routes.
     </p>
   </div>
   <div class="col-md-2"></div>

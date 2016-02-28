@@ -1,10 +1,10 @@
 #Results and Conclusion
 ###Using R to understand the leading causes of death among refugees coming to Europe
-######Rufus Raghunath - Makers Academy week 06 (independent project)
+#####Rufus Raghunath - Makers Academy week 06 (independent project)
 
 
 ##Conclusion
-Overall fatalities are increasing and the highest-risk group are refugees traveling into Europe by sea in January via the Western Mediterranean Route. Drowning and exhaustion account for the vast majority of refugee disaster incidents.
+Overall fatalities are increasing and the highest-risk group are refugees traveling into Europe by sea in January. Maritime entry into Europe is especially dangerous (e.g. Western African Route, Central Mediterranean Route). Drowning and exhaustion account for the vast majority of refugee disaster incidents.
 
 ##Summary of Results
 Drowning and exhaustion related incidents are by far the most deadly. These incidents have the highest mean death/missing count, as well as the highest count for any one incident (800), thus far surpassing intentional causes of death such as malicious intent (e.g. murder, manslaughter) and authority-related death (e.g. police brutality, torture). Devoting effort to preventing shipwrecks or providing better coastguard/disaster response aid to the affected nautical routes could massively reduce refugee morbidity.
@@ -15,13 +15,7 @@ Time of year (month) does not appear to affect the mean dead/missing count per i
 
 Across various comparisons, January appears to be most deadly month (highest frequency of incidents reported). This may be due to the presence of more extreme weather conditions, particularly given the finding that drowning and exhaustion incidents account for the majority of refugee deaths (i.e. ships are more likely to founder in bad weather). It follows that aid efforts should be particularly intensified in winter.
 
-2008 deadliest year?
-
-WMR deadliest route?
-
-N.B.:
-In order to compare relative rather than absolute deadliness of refugee routes, these analyses still need to be adjusted for the number of refugees traveling on each route.
-
+Overall, the West African route is the most dangerous, with a 4.69% mortality rate in 2015. Second is the Central Mediterranean route (1.97%) and, while the Western Mediterranean route (1.24%) is third. As all of these routes lead over water, these results underscore corroborate the previous data on the extreme prevalence of drowning/exhaustion-related morbidity. However, these mortality rates are only an approximation based on the assumption that Frontex's data on illegal entry into Europe accurately represents refugee travel on the various routes.
 
 
 ##Technical Results
@@ -90,10 +84,6 @@ Year
 - 2015 and 2014
 - 2016 and 2014
 
-Route
-
-- coming soon...
-
 
 ###Chi-squared
 The following distributions were found to be non-independent (p<0.05):
@@ -125,9 +115,6 @@ Cause of death * Year
 - SUI and VIO
 - UNK and VIO
 
-Cause of death * Route taken
-
-- coming soon...
 
 Cause of death * Year
 

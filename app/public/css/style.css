@@ -45,6 +45,19 @@ p {
   margin-bottom: 20px;
 }
 
+@media (min-width: 700px) and (max-width: 991px){
+  #index-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  #index-text{
+    border: none;
+  }
+}
+
+
 #index-text p {
   line-height: 1.2;
 }
@@ -73,6 +86,15 @@ p {
   font-style: italic;
 }
 
+div .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1 {
+  text-align: left;
+}
+
 h3 {
   margin-top: 3%;
 }
@@ -91,7 +113,7 @@ h3 {
 }
 
 .slider ul {
-  width: 700%;
+  width: 800%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -102,7 +124,7 @@ h3 {
   float: left;
   padding: 0;
   margin: 0;
-  width: (100/7)%;
+  width: (100/8)%;
   overflow: hidden;
   top: 0;
   bottom: 0;
