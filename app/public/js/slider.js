@@ -3,6 +3,7 @@
 $(function() {
 
   $('#prev').hide();
+  $('#next').hide();
 
   var ul = $(".slider ul");
   var slide_count = ul.children().length;
@@ -22,6 +23,20 @@ $(function() {
   $("#next").click(function() {
     slide(slide_index + 1);
   });
+
+  $('.slider-wrapper').hover(
+    function() {
+      if (slide_index > 0) {
+        $('#prev').show();
+      }
+      if (slide_index + 1 != slide_count){
+        $('#next').show();
+      }
+    }, function() {
+      $('#next').hide();
+      $('#prev').hide();
+    }
+  );
 
   function slide(new_slide_index) {
     if(new_slide_index < 0){

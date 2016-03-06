@@ -9,8 +9,6 @@ p {
   line-height: 1.7;
 }
 
-/*resize <p> size*/
-
 .container-fluid{
   height:100%;
   display:table;
@@ -152,7 +150,6 @@ h3 {
   margin: 0;
   padding: 0;
   text-align:center;
-  opacity: 0;
   z-index: 2;
 }
 
@@ -162,8 +159,4 @@ h3 {
 
 #next {
   right: 0;
-}
-
-#prev:hover, #prev:active, #next:hover, #next:active {
-  opacity: 1.0;
 }

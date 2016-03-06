@@ -21,7 +21,7 @@ For the ordinal variables, chi-squared tests were performed to test for independ
 
 For each route, the total number of illegal entrants in 2015 was added to the number of persons who died or went missing on that route in 2015 (d), giving the total number of persons who attempted to make the journey (j). The percentage mortality rate (m) for that route was calculated using m = (d/j)*100.
 
-For the stats details, see ```/anova``` and ```/chisq```.
+For the stats details, see ```/r/anova``` and ```/r/chisq```.
 
 
 ##CONCLUSIONS:
