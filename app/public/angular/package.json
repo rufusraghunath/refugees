@@ -1,0 +1,23 @@
+{
+  "name": "refugees-angular",
+  "version": "1.0.0",
+  "readme": "../../../README.md",
+  "description": "Using R to understand mortality among refugees traveling to Europe",
+  "main": "",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rufusraghunath/refugees.git"
+  },
+  "author": "Rufus Raghunath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rufusraghunath/refugees/issues"
+  },
+  "homepage": "https://github.com/rufusraghunath/refugees",
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "nodemon": "^1.9.1",
+    "protractor": "^3.1.1"
+  }
+}

@@ -17,6 +17,10 @@ class RefugeeData < Sinatra::Base
     erb :explore
   end
 
+  get '/interactive' do
+    send_file 'app/public/angular/app/test.html'
+  end
+
 
   # start the server if ruby file executed directly
   run! if app_file == $0
