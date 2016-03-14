@@ -1,1 +1,1 @@
-var refugeesApp = angular.module('refugeesApp', ['ngResource']);
+var refugeesApp = angular.module('refugeesApp', ['ngResource', 'chart.js']);

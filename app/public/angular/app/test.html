@@ -1,10 +1,22 @@
-<script src="angular/app/bower_components/angular/angular.js"></script>
-<script src="angular/app/bower_components/angular-resource/angular-resource.js"></script>
-<script src="angular/app/js/app.js"></script>
-<script src="angular/app/js/controllers/controllers.js"></script>
+<!DOCTYPE html>
+<html lang='en' ng-app='refugeesApp'>
+<head>
+  <meta charset="utf-8" />
+  <script src="angular/app/bower_components/angular/angular.js"></script>
+  <script src="angular/app/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="angular/app/bower_components/Chart.js/Chart.js"></script>
+  <script src="angular/app/bower_components/angular-chart.js/dist/angular-chart.js"></script>
+  <link rel="stylesheet" href="angular/app/bower_components/angular-chart.js/dist/angular-chart.css">
+  <script src="angular/app/js/app.js"></script>
+  <script src="angular/app/js/controllers/controllers.js"></script>
+</head>
+<body>
 
-<section ng-app='refugeesApp'>
   <section ng-controller='testController as testCtrl'>
     {{testCtrl.name}}
+    <button ng-click='testCtrl.changeName()'>change name</button>
   </section>
-</section>
+
+
+</body>
+</html>
