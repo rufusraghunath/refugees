@@ -12,11 +12,33 @@
 </head>
 <body>
 
-  <section ng-controller='testController as testCtrl'>
-    {{testCtrl.name}}
-    <button ng-click='testCtrl.changeName()'>change name</button>
-  </section>
+  <section ng-controller='BarCtrl'>
 
+    <canvas id="bar" class="chart chart-bar" chart-data="data"
+    chart-labels="labels" chart-series="series">
+    </canvas>
+
+    <h4>Filter by:</h4>
+
+    Incident cause:
+    <select ng-model='selected'
+    ng-options='dataSet.name for dataSet in incidentCause.data'
+    ng-change='changeData()'>
+    </select>
+
+    Year:
+    <select ng-model='selected'
+    ng-options='dataSet.name for dataSet in incidentYear.data'
+    ng-change='changeData()'>
+    </select>
+
+    Month:
+    <select ng-model='selected'
+    ng-options='dataSet.name for dataSet in incidentMonth.data'
+    ng-change='changeData()'>
+    </select>
+
+  </section>
 
 </body>
 </html>
