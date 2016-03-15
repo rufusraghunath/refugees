@@ -1,8 +1,27 @@
-refugeesApp.controller("BarCtrl", function ($scope) {
+refugeesApp.controller("BarCtrl", function ($scope, $window) {
 
-  $scope.labels = [
+
+  $scope.abbreviatedLabels = [
+    'WA', 'WM', 'CM', 'EM', 'C', 'WB', 'EB'
+  ];
+
+  $scope.fullLabels = [
     'Western African', 'Western Mediterranean', 'Central Mediterranean', 'Eastern Mediterranean', 'Circular', 'Western Balkan', 'Eastern Borders'
   ];
+
+  $scope.labels = $scope.abbreviatedLabels;
+
+  // var w = angular.element($window);
+  //
+  // w.bind('resize', function ($scope) {
+  //   if (w.width() > 800) {
+  //     $scope.labels = $scope.fullLabels;
+  //   } else {
+  //     $scope.labels = $scope.abbreviatedLabels;
+  //   }
+  //   console.log($scope.labels);
+  // });
+
 
   $scope.dataSets = [{
     comparison: 'Overall mortality',
@@ -85,19 +104,19 @@ refugeesApp.controller("BarCtrl", function ($scope) {
   $scope.incidentMonth = {
     comparison: 'Incidents per month',
     data: [{
-            name: 'Jan',
+            name: 'January',
             type: 'month',
             data: [44, 98, 86, 44, 0, 3, 2]
           }, {
-            name: 'Feb',
+            name: 'February',
             type: 'month',
             data: [17, 47, 21, 17, 0, 1, 1]
           }, {
-            name: 'Mar',
+            name: 'March',
             type: 'month',
             data: [21, 42, 43, 21, 0, 1, 0]
           }, {
-            name: 'Apr',
+            name: 'April',
             type: 'month',
             data: [34, 43, 48, 34, 0, 1, 0]
           }, {
@@ -105,31 +124,31 @@ refugeesApp.controller("BarCtrl", function ($scope) {
             type: 'month',
             data: [21, 46, 70, 21, 0, 1, 1]
           }, {
-            name: 'Jun',
+            name: 'June',
             type: 'month',
             data: [13, 38, 90, 13, 0, 2, 0]
           }, {
-            name: 'Jul',
+            name: 'July',
             type: 'month',
             data: [45, 55, 65, 45, 0, 2, 1]
           }, {
-            name: 'Aug',
+            name: 'August',
             type: 'month',
             data: [39, 55, 87, 39, 1, 1, 0]
           }, {
-            name: 'Sep',
+            name: 'September',
             type: 'month',
             data: [24, 51, 57, 24, 0, 3, 0]
           }, {
-            name: 'Oct',
+            name: 'October',
             type: 'month',
             data: [21, 46, 64, 21, 1, 2, 1]
           }, {
-            name: 'Nov',
+            name: 'November',
             type: 'month',
             data: [26, 45, 32, 26, 0, 2, 1]
           }, {
-            name: 'Dec',
+            name: 'December',
             type: 'month',
             data: [42, 73, 24, 42, 1, 3, 2]
           }]
@@ -174,6 +193,10 @@ refugeesApp.controller("BarCtrl", function ($scope) {
 
   $scope.chartType = $scope.selected.type;
 
+  $scope.filterOptions = ['Cause', 'Year', 'Month'];
+
+  $scope.currentFilter = $scope.filterOptions[0];
+
   $scope.data = [
     $scope.incidentCause.data[0].data
   ];
@@ -189,7 +212,5 @@ refugeesApp.controller("BarCtrl", function ($scope) {
     $scope.chartType = $scope.selected.type;
     $scope.chartTitle = $scope.selected.name;
   };
-
-
 
 });

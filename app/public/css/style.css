@@ -4,6 +4,25 @@ html, body{height:100%; margin:0;padding:0;}
   font-family: 'Oxygen', 'Helvetica Neue';
 }
 
+#chart{
+  text-align: center;
+  margin: 0 auto;
+  width: 65%;
+}
+
+#chart-title {
+  font-size: 2em;
+}
+
+#bar {
+  display: inline-block;
+}
+
+#legend p{
+  font-size: 0.8em;
+}
+
+
 p {
   font-size: 12pt;
   line-height: 1.7;

@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang='en' ng-app='refugeesApp'>
 <head>
+  <title>Refugee Disasters 2000-2016</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel='stylesheet' type='text/css' href='/css/style.css' />
+
+
   <script src="angular/app/bower_components/angular/angular.js"></script>
   <script src="angular/app/bower_components/angular-resource/angular-resource.js"></script>
   <script src="angular/app/bower_components/Chart.js/Chart.js"></script>
@@ -11,36 +20,74 @@
   <script src="angular/app/js/controllers/controllers.js"></script>
 </head>
 <body>
+<div class='row'>
 
-  <section ng-controller='BarCtrl'>
+  <section id='chart' ng-controller='BarCtrl'>
 
-    <h2>Total refugee disaster incidents per route, filtered by {{chartType}}: <em>{{chartTitle}}</em></h2>
+    <h2 id='chart-title'>Total refugee disaster incidents per route, filtered by {{chartType}}: <em>{{chartTitle}}</em></h2>
 
     <canvas id="bar" class="chart chart-bar" chart-data="data"
-    chart-labels="labels" chart-series="series">
+    chart-labels='labels' chart-series="series">
     </canvas>
 
-    <h4>Filter by:</h4>
+    <h4>Filter incidents by:
+    <select ng-model='currentFilter'
+    ng-options='filter for filter in filterOptions'>
+    </select>
 
-    Incident cause:
-    <select ng-model='selected'
+
+    <select ng-show='currentFilter == "Cause"'
+    ng-model='selected'
     ng-options='dataSet.name for dataSet in incidentCause.data'
     ng-change='changeData();'>
     </select>
 
-    Year:
-    <select ng-model='selected'
+    <select ng-show='currentFilter == "Year"'
+    ng-model='selected'
     ng-options='dataSet.name for dataSet in incidentYear.data'
     ng-change='changeData();'>
     </select>
 
-    Month:
-    <select ng-model='selected'
+    <select ng-show='currentFilter == "Month"'
+    ng-model='selected'
     ng-options='dataSet.name for dataSet in incidentMonth.data'
     ng-change='changeData();'>
-    </select>
+    </select></h4>
 
+    <section id='legend'>
+      <b>Legend of Routes (as defined by <a href='http://frontex.europa.eu/trends-and-routes/migratory-routes-map/'>Frontex</a>):</b>
+      <p>
+        <b>WA:</b> Western African, <b>WM:</b> Western Mediterranean, <b>CM:</b> Central Mediterranean, <b>EM:</b> Eastern Mediterranean, <b>C:</b> Circular, <b>WB:</b> Western Balkan, <b>EB:</b> Eastern Borders
+      </p>
+    </section>
   </section>
 
+  <div id='hidden'></div>
+
+  <div class="navbar navbar-default navbar-fixed-bottom" class="container-fluid" style="text-align:center;">
+    <div style="margin:auto;">
+      <div style="display:inline-block;padding:10px;">
+        Made by Rufus Raghunath
+      </div>
+      <div style="display:inline-block;padding:10px;">
+        <a href="https://github.com/rufusraghunath">
+          <img style="height:20px;" src="/images/github.png"/>
+        </a>
+      </div>
+      <div style="display:inline-block;padding:10px;">
+        <a href="https://www.linkedin.com/in/rufusraghunath?trk=hp-identity-name">
+          <img style="height:20px;" src="images/linkedin.png"/>
+        </a>
+      </div>
+      <div style="display:inline-block;padding:10px;">
+        <a href="https://codeyourselfdizzy.wordpress.com/">
+          <img style="height:20px;" src="/images/wordpress.png"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</div><!-- end row-fluid -->
 </body>
 </html>
