@@ -18,7 +18,7 @@ class RefugeeData < Sinatra::Base
   end
 
   get '/interactive' do
-    send_file 'app/public/angular/app/test.html'
+    send_file 'app/public/angular/app/charts.html'
   end
 
 
